@@ -67,8 +67,8 @@ async def start_(client: Client, message: Message):
                     )
                 ],                
                 [
-                    InlineKeyboardButton("𝐂𝐎𝐌𝐌𝐀𝐍𝐃🔐", callback_data="cbcmds"),
-                    InlineKeyboardButton("🍀𝐎𝐖𝐍𝐄𝐑✨", url=f"https://t.me/log_afk"),
+                    InlineKeyboardButton("❔𝐂𝐎𝐌𝐌𝐀𝐍𝐃🔐", callback_data="cbcmds"),
+                    InlineKeyboardButton("📣𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑💫", url=f"https://t.me/log_afk"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -80,7 +80,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📣𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑💫", url="https://t.me/EVIL_XD_BOY"
+                        "🍀𝐎𝐖𝐍𝐄𝐑✨", url="https://t.me/EVIL_XD_BOY"
                     )
                 ],
             ]
@@ -100,15 +100,15 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/UNIQUE_SOCIETY"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📩 𝐆𝐑𝐎𝐔𝐏 📩", url=f"https://t.me/All_Dear_comrade"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤"
+    alive = f"**𝗛𝗲𝗹𝗹𝗼 {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ 𝗕𝗼𝘁 𝗶𝘀 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗻𝗼𝗿𝗺𝗮𝗹𝗹𝘆\n🍀 My Master: [𝐋𝐎𝐆 𝐀𝐅𝐊](https://t.me/Log_afk)\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝗔𝗱𝗱𝗶𝗻𝗴 𝗺𝗲 𝗵𝗲𝗿𝗲, 𝗳𝗼𝗿 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝘃𝗶𝗱𝗲𝗼 & 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽'𝘀 𝗔𝘂𝗱𝗶𝗼 𝗰𝗵𝗮𝘁** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -144,17 +144,17 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "❤️ **Thanks for adding me to the Group !**\n\n"
-                "**Promote me as administrator of the Group, otherwise I will not be able to work properly, and don't forget to type /userbotjoin for invite the assistant.**\n\n"
+                "❤️ **𝑻𝒉𝒂𝒏𝒌𝒔 𝒇𝒐𝒓 𝒂𝒅𝒅𝒊𝒏𝒈 𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝑮𝒓𝒐𝒖𝒑 !**\n\n"
+                "**✤Promote✤ ✤me✤ ✤as✤ ✤administrator✤ ✤of✤ ✤the✤ ✤Group✤, ❁otherwise❁ ❁I❁ ❁will❁ ❁not❁ ❁be❁ ❁able❁ ❁to❁ ❁work❁ ❁properly❁, ✤and✤ ✤don't✤ ✤forget✤ ✤to✤ ✤type✤ /userbotjoin ❀for❀ ❀invite❀ ❀the❀ ❀assistant❀.**\n\n"
                 "**Once done, type** /reload",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/UNIQUE_SOCIETY"),
+                            InlineKeyboardButton("📩𝐆𝐑𝐎𝐔𝐏📩", url=f"https://t.me/ALL_DEAR_COMRADE")
                         ],
                         [
-                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("👤𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓💫", url=f"https://t.me/{ass_uname}")
                         ]
                     ]
                 )
