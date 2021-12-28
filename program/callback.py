@@ -16,7 +16,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""🌈 **☞ ✰ Wᴇʟᴄᴏᴍᴇ...Fʀɪᴇɴᴅs  {message.from_user.mention()} !**\n
+        f"""🌈 **☞ ✰ Wᴇʟᴄᴏᴍᴇ...Fʀɪᴇɴᴅs  {message.from_user.mention()} !**\n
 🌈 ☞ [✰🅺ɪᴀʀᴀ ✘ 🆁ᴏʙᴏᴛ✰](https://t.me/{BOT_USERNAME}) **Hᴇʟʟᴏ...Fʀɪᴇɴᴅs I Aᴍ Pʟᴀʏɪɴɢ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ!**
 """,
         reply_markup=InlineKeyboardMarkup(
