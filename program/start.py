@@ -86,6 +86,8 @@ async def start_(client: Client, message: Message):
         disable_web_page_preview=True,
     )
 
+
+
 @Client.on_message(
     command(["alive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
