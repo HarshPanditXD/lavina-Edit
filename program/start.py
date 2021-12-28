@@ -75,7 +75,7 @@ async def start_(client: Client, message: Message):
                         "🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/UNIQUE_SOCIETY"
                     ),
                     InlineKeyboardButton(
-                        "📩𝐆𝐑𝐎𝐔𝐏📩", url=f"https://t.me/ALL_DEAR_COMRADE"
+                        "📩 𝐆𝐑𝐎𝐔𝐏 📩", url=f"https://t.me/ALL_DEAR_COMRADE"
                     ),
                 ],
                 [
