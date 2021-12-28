@@ -4,7 +4,7 @@ Music Bot
 
 ## 🎭 Preview
 <p align="center">
-  <img src="https://telegra.ph/file/b8c1461bcbbad5664aa48.png">
+  <img src="https://telegra.ph/file/7ff41768141ad217e203a.jpg">
 </p>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/levina-lab/video-stream)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HARSHPANDITXD/LAVINA-EDIT)
