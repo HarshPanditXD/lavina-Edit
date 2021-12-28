@@ -54,7 +54,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""🌈 **☞ ✰ Wᴇʟᴄᴏᴍᴇ...Fʀɪᴇɴᴅs  {message.from_user.mention()} !**\n
-🌟 [✰🅺ɪᴀʀᴀ ✘ 🆁ᴏʙᴏᴛ✰](https://t.me/{BOT_USERNAME}) **Hᴇʟʟᴏ...Fʀɪᴇɴᴅs I Aᴍ Pʟᴀʏɪɴɢ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ!**
+🌈 ☞ [✰🅺ɪᴀʀᴀ ✘ 🆁ᴏʙᴏᴛ✰](https://t.me/{BOT_USERNAME}) **Hᴇʟʟᴏ...Fʀɪᴇɴᴅs I Aᴍ Pʟᴀʏɪɴɢ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -97,9 +97,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ 𝐆𝐑𝐎𝐔𝐏 💫", url=f"https://t.me/UNIQUE_SUPPORT"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/ALL_DEAR_COMRADE"
                 ),
             ]
         ]
@@ -141,14 +141,14 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "❤️ **Thanks for adding me to the Group !**\n\n"
+                "❤️ **𝑇𝒉𝑎𝑛𝑘𝑠 𝑓𝑜𝑟 𝑎𝑑𝑑𝑖𝑛𝑔 𝑚𝑒 𝑡𝑜 𝑡𝒉𝑒 𝐺𝑟𝑜𝑢𝑝 !**\n\n"
                 "**Promote me as administrator of the Group, otherwise I will not be able to work properly, and don't forget to type /userbotjoin for invite the assistant.**\n\n"
                 "**Once done, type** /reload",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/UNIQUE_SOCIETY"),
+                            InlineKeyboardButton("🍀 𝐆𝐑𝐎𝐔𝐏 💫", url=f"https://t.me/ALL_DEAR_COMRADE")
                         ],
                         [
                             InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
