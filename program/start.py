@@ -12,8 +12,7 @@ from config import (
     UPDATES_CHANNEL,
 )
 from program import __version__
-from driver.veez import user
-from driver.filters import command, other_filters
+from driver.veez import userpfrom driver.filters import command, other_filters
 from pyrogram import Client, filters
 from pyrogram import __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
@@ -65,15 +64,15 @@ async def start_(client: Client, message: Message):
                     )
                 ],                
                 [
-                    InlineKeyboardButton("❔𝐂𝐎𝐌𝐌𝐀𝐍𝐃🔐", callback_data="cbcmds"),
-                    InlineKeyboardButton("📣𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑💫", url=f"https://t.me/log_afk"),
+                    InlineKeyboardButton("🔐𝐂𝐎𝐌𝐌𝐀𝐍𝐃", callback_data="cbcmds"),
+                    InlineKeyboardButton("💫𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑", url=f"https://t.me/log_afk"),
                 ],
                 [
                     InlineKeyboardButton(
                         "🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/UNIQUE_SOCIETY"
                     ),
                     InlineKeyboardButton(
-                        "📩 𝐆𝐑𝐎𝐔𝐏 📩", url=f"https://t.me/ALL_DEAR_COMRADE"
+                        "🍀 𝐆𝐑𝐎𝐔𝐏 💫", url=f"https://t.me/ALL_DEAR_COMRADE"
                     ),
                 ],
                 [
