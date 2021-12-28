@@ -62,20 +62,20 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ➕",
+                        "➕Aᴅᴅ Mᴇ Tᴏ Gʀᴏᴜᴘ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],                
                 [
-                    InlineKeyboardButton("🔐Cᴏᴍᴍᴀɴᴅs🔐", callback_data="cbcmds"),
-                    InlineKeyboardButton("✨Dᴇᴠᴇʟᴏᴘᴇʀ💫", url=f"https://t.me/log_afk"),
+                    InlineKeyboardButton("Hᴇʟᴘ Cᴍᴅ🔐", callback_data="cbcmds"),
+                    InlineKeyboardButton("🍀 Dᴇᴠ.💫", url=f"https://t.me/log_afk"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🍀Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ📪", url=f"https://t.me/UNIQUE_SOCIETY"
+                        "🍀Gʀᴏᴜᴘ📪", url=f"https://t.me/UNIQUE_SOCIETY"
                     ),
                     InlineKeyboardButton(
-                        "📩Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ📩", url=f"https://t.me/ALL_DEAR_COMRADE"
+                        "📩Gʀᴏᴜᴘ📩", url=f"https://t.me/ALL_DEAR_COMRADE"
                     ),
                 ],
                 [
