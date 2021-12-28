@@ -53,44 +53,38 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
-
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
-
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
+        f"""🌈 **☞ ✰ Wᴇʟᴄᴏᴍᴇ...Fʀɪᴇɴᴅs  {message.from_user.mention()} !**\n
+🌟 [✰🅺ɪᴀʀᴀ ✘ 🆁ᴏʙᴏᴛ✰](https://t.me/{BOT_USERNAME}) **Hᴇʟʟᴏ...Fʀɪᴇɴᴅs I Aᴍ Pʟᴀʏɪɴɢ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐆𝐑𝐎𝐔𝐏➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
-                ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                ],                
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🔐𝐂𝐎𝐌𝐌𝐀𝐍𝐃", callback_data="cbcmds"),
+                    InlineKeyboardButton("💫𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑", url=f"https://t.me/log_afk"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🍀𝐒𝐔𝐏𝐏𝐎𝐑𝐓📪", url=f"https://t.me/UNIQUE_SOCIETY"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🍀 𝐆𝐑𝐎𝐔𝐏 💫", url=f"https://t.me/ALL_DEAR_COMRADE"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🍀𝐎𝐖𝐍𝐄𝐑✨", url="https://t.me/EVIL_XD_BOY"
                     )
                 ],
             ]
         ),
         disable_web_page_preview=True,
     )
-
 
 @Client.on_message(
     command(["alive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
