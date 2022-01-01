@@ -61,36 +61,35 @@ async def play(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"✌️Tᴏ ᴜsᴇ ᴍᴇ, I ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀɴ **Aᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** Wɪᴛʜ ᴛʜᴇ Fᴏʟʟᴏᴡɪɴɢ✌️ **Pᴇʀᴍɪssɪᴏɴs**:\n\n» ✌️ __Dᴇʟᴇᴛᴇ Mᴇssᴀɢᴇs__\n» ✌️ __Aᴅᴅ Usᴇʀs__\n» ✌️ __Mᴀɴᴀɢᴇ Vᴏɪᴄᴇ Cʜᴀᴛ__\n\nData is **Uᴘᴅᴀᴛᴇᴅ** Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Aғᴛᴇʀ Yᴏᴜ **Pʀᴏᴍᴏᴛᴇ Mᴇ**"
+            f"❔*𝐌𝐢𝐬𝐬𝐢𝐧𝐠 𝐀𝐝𝐦𝐢𝐧 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧*🌹*:\n\n» ✌️ __𝑫𝒆𝒍𝒆𝒕𝒆 𝑴𝒂𝒔𝒔𝒂𝒈𝒆__\n» ✌️ __𝑨𝒅𝒅 𝑼𝒔𝒆𝒓__\n» ✌️ __🌹𝑴𝒂𝒏𝒂𝒈𝒆 𝑽𝒐𝒊𝒄𝒆 𝑪𝒉𝒂𝒕✨__\n\n𝑫𝒂𝒕𝒂 𝒊𝒔 **✌️𝑼𝒑𝒅𝒂𝒕𝒆✨**💫𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒄𝒂𝒍𝒍𝒚 𝑨𝒇𝒕𝒆𝒓 𝒀𝒐𝒖✨ **𝑷𝒓𝒐𝒎𝒐𝒕𝒆 𝑴𝒆**"
         )
         return
     if not a.can_manage_voice_chats:
         await m.reply_text(
-            "Mɪssɪɴɢ Rᴇϙᴜɪʀᴇᴅ Pᴇʀᴍɪssɪᴏɴ❔:" + "\n\n» ✌️ __Mᴀɴᴀɢᴇ Vᴏɪᴄᴇ Cʜᴀᴛ__"
+            "🔰𝐌𝐢𝐬𝐬𝐢𝐧𝐠 𝐀𝐝𝐦𝐢𝐧 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧❔:" + "\n\n» ✌️ __𝑴𝒂𝒏𝒂𝒈𝒆 𝑽𝒐𝒊𝒄𝒆 𝑪𝒉𝒂𝒕__"
         )
         return
     if not a.can_delete_messages:
         await m.reply_text(
-            "Mɪssɪɴɢ Rᴇϙᴜɪʀᴇᴅ Pᴇʀᴍɪssɪᴏɴ❔:" + "\n\n» 🗑️ __Dᴇʟᴇᴛᴇ Mᴇssᴀɢᴇs__"
+            "💫𝐌𝐢𝐬𝐬𝐢𝐧𝐠 𝐀𝐝𝐦𝐢𝐧 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧❔:" + "\n\n» 🗑️ __𝑫𝒆𝒍𝒆𝒕𝒆 𝑴𝒂𝒔𝒔𝒂𝒈𝒆__"
         )
         return
     if not a.can_invite_users:
-        await m.reply_text("Mɪssɪɴɢ Rᴇϙᴜɪʀᴇᴅ Pᴇʀᴍɪssɪᴏɴ✌️:" + "\n\n» ✌️ __Aᴅᴅ Usᴇʀ__")
+        await m.reply_text("⚡𝐌𝐢𝐬𝐬𝐢𝐧𝐠 𝐀𝐝𝐦𝐢𝐧 𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧✨:" + "\n\n» ✌️ __𝑨𝒅𝒅 𝑼𝒔𝒆𝒓__")
         return
     try:
         ubot = (await user.get_me()).id
         b = await c.get_chat_member(chat_id, ubot)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **Is ʙᴀɴɴᴇᴅ ɪɴ Gʀᴏᴜᴘ** {m.chat.title}\n\n» **Uɴʙᴀɴ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ғɪʀsᴛ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴛʜɪs Bᴏᴛ.**"
-            )
+                f"@{ASSISTANT_NAME} **☠️ 𝐈𝐬 𝐁𝐚𝐧𝐧𝐞𝐝 🏜️ 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 🙀** {m.chat.title}**"
             return
     except UserNotParticipant:
         if m.chat.username:
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"✌️ **Usᴇʀʙᴏᴛ ғᴀɪʟᴇᴅ ᴛᴏ Jᴏɪɴ.**\n\n**Rᴇᴀsᴏɴ**: `{e}`")
+                await m.reply_text(f"💫 *𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐅𝐚𝐢𝐥𝐞𝐝 ☠️ 𝐓𝐨 𝐉𝐨𝐢𝐧 🌟*\n\n**✌️ 𝐑𝐞𝐚𝐬𝐨𝐧 ✨**: `{e}`")
                 return
         else:
             try:
@@ -106,11 +105,11 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"✌️ **Usᴇʀʙᴏᴛ Tᴏ Jᴏɪɴ**\n\n**reason**: `{e}`"
+                    f"💫 *𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐓𝐨 𝐉𝐨𝐢𝐧 💫**\n\n**⚡ 𝐑𝐞𝐚𝐬𝐨𝐧 ✨**: `{e}`"
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **downloading audio...**")
+            suhu = await replied.reply("📥🎸*𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐚𝐮𝐝𝐢𝐨☠️💫...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -155,7 +154,7 @@ async def play(c: Client, m: Message):
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "» ✨Rᴇᴘʟʏ Tᴏ Aɴ ✨ **Aᴜᴅɪᴏ Fɪʟᴇ** or **😂Gɪᴠᴇ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Sᴇᴀʀᴄʜ✨🙀.**"
+                    "**❔𝐀𝐮𝐝𝐢𝐨 𝐅𝐢𝐥𝐞✨** or **😂𝐆𝐢𝐯𝐞 𝐒𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 💫 𝐓𝐨 😇 𝐒𝐞𝐚𝐫𝐜𝐡 𝐒𝐨𝐧𝐠✨🙀.**"
                 )
             else:
                 suhu = await c.send_message(chat_id, "🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰</𝐎ꜰꜰʟɪɴᴇ> ‌[𝐀ꜰᴋ]☠️ ❱...**")
@@ -186,7 +185,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("*🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰ </𝐎ꜰꜰʟɪɴᴇ> ‌[𝐀ꜰᴋ] ☠️ ❱...*")
+                                await suhu.edit("*🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰ </𝐎ꜰꜰʟɪɴᴇ> ‌[𝐀ꜰᴋ]🌹 ☠️ ❱...*")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -209,7 +208,7 @@ async def play(c: Client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "» reply to an **Aᴜᴅɪᴏ Fɪʟᴇ** or **Gɪᴠᴇ Sᴏᴍᴇᴛʜɪɴɢ Tᴏ Sᴇᴀʀᴄʜ Sᴏɴɢs.**"
+                "*💫𝐆𝐢𝐯𝐞 𝐒𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 🎸 𝐓𝐨 🎧 𝐒𝐞𝐚𝐫𝐜𝐡 𝐒𝐨𝐧𝐠💫*"
             )
         else:
             suhu = await c.send_message(chat_id, "*🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰ 𝐀 𝐋 𝐎 𝐍 𝐄 ♪ ☠️ ❱...*")
@@ -240,7 +239,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("*✌️𝐉𝐨𝐢𝐧𝐢𝐧𝐠 🎸 𝐯𝐜 💫 𝐒𝐨𝐧𝐠 ❤️ 𝐏𝐥𝐚𝐲𝐢𝐧𝐠*")
+                            await suhu.edit("*✌️𝐉𝐨𝐢𝐧𝐢𝐧𝐠 🎸 𝐯𝐜 💫 𝐒𝐨𝐧𝐠 ❤️ 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🏜️*")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
