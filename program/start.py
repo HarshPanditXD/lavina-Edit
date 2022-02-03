@@ -52,7 +52,8 @@ async def _human_time_duration(seconds):
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_text(
+     await message.reply_photo("https://telegra.ph/Rishabh-Bhan-12-06")
+     await message.reply_text(
         f"""🌈 **☞ ✰ Wᴇʟᴄᴏᴍᴇ...Fʀɪᴇɴᴅs  {message.from_user.mention()} !**\n
 🌈 ☞ [✰🅺ɪᴀʀᴀ ✘ 🆁ᴏʙᴏᴛ✰](https://t.me/{BOT_USERNAME}) **Hᴇʟʟᴏ...Fʀɪᴇɴᴅs I Aᴍ Pʟᴀʏɪɴɢ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ!**
 """,
